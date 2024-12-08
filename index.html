@@ -8,16 +8,38 @@
       <title>My Personal Page</title>
       <!-- <link rel="stylesheet" href="styles.css"> Link to CSS file -->
       <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+
+      <style>
+        .circle-frame {
+            width: 300px; /* Adjust to your desired size */
+            height: 300px; /* Ensure height matches width for a perfect circle */
+            border-radius: 50%; /* Makes the frame circular */
+            overflow: hidden; /* Hides parts of the image outside the circle */
+            border: 3px solid #fff; /* Optional: adds a border around the circle */
+            margin: 20px auto; /* Center the circle with auto margins */
+        }
+
+        .circle-frame img {
+            width: 100%; /* Ensures the image covers the frame */
+            height: 100%; /* Keeps proportions within the circle */
+            object-fit: cover; /* Ensures the image is properly cropped */
+        }
+
+        header, p {
+            text-align: center; /* Centers the text for consistency */
+        }
+    </style>
+
   </head>
 
-  <body>
+  <body class="latex-dark">
     <header>
         <h1>Andre Felipe Zanella</h1>
     </header>
 
-  <!-- <h1 
-    id="andre-felipe-zanella">Andre Felipe Zanella
-  </h1> -->
+    <div class="circle-frame">
+      <img src="images/head.jpeg" alt="Profile Photo">
+    </div>
 
     <p>
       Hello, I'm a researcher whose main focus has been in large-scale (mobile) networks measurements, 
